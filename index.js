@@ -47,6 +47,7 @@ function generateToken() {
   let options = {
     method: "POST",
     body: JSON.stringify(data),
+    mode:"cors",
       headers: {
       "Access-Control-Allow-Origin": "*",
       "Content-type": "application/json; charset=UTF-8",
