@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: white;
+}
+header {
+  width: 100vw;
+  background-color: rgb(31, 57, 128);
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  color: aliceblue;
+}
+header h1 {
+  margin: 6px 20px;
+}
+.fetch-group {
+  margin: auto;
+}
+.fetch-group input {
+  padding: 10px;
+  margin-right: 1rem;
+  border-radius: 1rem;
+  border: none;
+}
+.fetch-group button {
+  padding: 10px 20px;
+  background-color: lightyellow;
+  border-radius: 1rem;
+  border: none;
+}
+.buyer-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 50px);
+  gap: 2rem;
+  margin: 20px 50px 10px 50px;
+}
+.buyer-order {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+fieldset {
+  display: flex;
+}

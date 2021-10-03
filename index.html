@@ -1,0 +1,114 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Preesh API</h1>
+      <div class="fetch-group">
+      <input type="text" id="order-Id" placeholder="Order ID" />
+      <button id="fetch-btn">Fetch</button></div>
+    </header>
+    <main>
+      <section>
+        <div class="buyer-details">
+          <div class="buyer-order">
+            <h3>Buyer Details</h3>
+          <input type="number" placeholder="New Order ID" name="" id="new-orderId" />
+
+          <fieldset>
+            <legend>Delivery Mode</legend>
+            <div>
+              <input type="radio" name="format" id="cod" value="COD" checked />
+              <label for="txt">COD</label>
+            </div>
+            <div>
+              <input type="radio" name="format" id="prepaid" value="PREPAID" />
+              <label for="csv">PREPAID</label>
+            </div>
+          </fieldset>
+          </div>
+          <input type="text" placeholder="First Name" id="fName"/>
+          <input type="text" placeholder="Last Name" id="lName"/>
+
+          <input type="tel" placeholder="Phone Number" id="phone"/>
+          <input type="email" placeholder="Email" name="" id="email" />
+
+          <textarea
+            name=""
+            placeholder="Address Line 1"
+            id="address-1"
+           
+          ></textarea>
+          <textarea
+            name=""
+            placeholder="Address Line 2"
+            id="address-2"
+
+          ></textarea>
+
+          <input type="number" maxlength="6" name="" id="pincode" placeholder="PINCODE"/>
+          <input type="text" placeholder="City" id="city"/>
+          <input type="text" placeholder="State" id="state"/>
+          <!-- Company name, Country FIXED -->
+        </div>
+        <div class="order-details">
+          <h3>Order Details</h3>
+
+          <input type="number" placeholder="Order Date" />
+
+          <h6>Product Details</h6>
+          <ul>
+            <li>
+              <input type="checkbox" for="name2"></input>
+          <input type="text" placeholder="Product Name" />
+          <input type="text" placeholder="SKU" name="" id="" />
+          <input type="text" placeholder="Quantity" name="" id="" />
+          <input type="number" placeholder="Total Price = Total + GST " />
+            </li>
+
+                      <li>
+              <input type="checkbox" for="name2"></input>
+          <input type="text" placeholder="Product Name" />
+          <input type="text" placeholder="SKU" name="" id="" />
+          <input type="text" placeholder="Quantity" name="" id="" />
+          <input type="number" placeholder="Total Price = Total + GST " />
+            </li>
+                        <li>
+              <input type="checkbox" for="name2"></input>
+          <input type="text" placeholder="Product Name" />
+          <input type="text" placeholder="SKU" name="" id="" />
+          <input type="text" placeholder="Quantity" name="" id="" />
+          <input type="number" placeholder="Total Price = Total + GST " />
+            </li>
+                        <li>
+              <input type="checkbox" for="name2"></input>
+          <input type="text" placeholder="Product Name" />
+          <input type="text" placeholder="SKU" name="" id="" />
+          <input type="text" placeholder="Quantity" name="" id="" />
+          <input type="number" placeholder="Total Price = Total + GST " />
+            </li>
+          </ul>
+          <!-- Category FIXED -->
+        </div>
+        <div class="package-weight">
+                      <h6>Package Weight</h6>
+             
+          <input type="number" placeholder="Weight" />
+          <input type="number" placeholder="Length" name="" id="" />
+          <input type="number" placeholder="Width" name="" id="" />
+          <input type="number" placeholder="Height" />
+            
+        </div>
+
+      </section>
+      <button id="add-order-btn">Add Order</button>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
