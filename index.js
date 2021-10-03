@@ -47,7 +47,10 @@ function generateToken() {
   let options = {
     method: "POST",
     body: JSON.stringify(data),
-    headers: { "Content-type": "application/json; charset=UTF-8" },
+      headers: {
+      "Access-Control-Allow-Origin": "*",
+      "Content-type": "application/json; charset=UTF-8",
+    }
   };
   fetch(
     "https://app.goswift.in/integrations/v2/auth/token/6140cc97ac120e007127278c",
@@ -56,7 +59,7 @@ function generateToken() {
     .then((response) => response.json())
     .then((json) => console.log(json));
 }
-// generateToken();
+generateToken();
 
 function getRequest() {
   fetch("https://app.goswift.in/api/v2/serviceability/464665", {
@@ -66,4 +69,4 @@ function getRequest() {
     .then((response) => response.json())
     .then((json) => console.log(json));
 }
-getRequest();
+
