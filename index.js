@@ -256,7 +256,7 @@ function callWebhook() {
     payload: createNewJson(),
     headers: { "Content-type": "application/json; charset=UTF-8" },
   };
-    var response = fetch("/api/*https://script.google.com/macros/s/AKfycbw0slsOTURz8cgucnGspx_8ccnuqmiHQ_02mhiV658LbFQF0InVif8cDbfl2HTguY58Mg/exec", options)
+    var response = fetch("/api/*  https://script.google.com/macros/s/AKfycbw0slsOTURz8cgucnGspx_8ccnuqmiHQ_02mhiV658LbFQF0InVif8cDbfl2HTguY58Mg/exec", options)
 
     let data = response.json();
     console.log(data)
