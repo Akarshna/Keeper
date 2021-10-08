@@ -180,7 +180,11 @@ function createNewJson() {
  },
     items: items,
   };
-  return JSON.stringify(jsonBorn);
+  //With Single quotes
+  //return JSON.stringify(jsonBorn);
+  
+  //Without quotes
+  return jsonBorn;
 }
 
 /**
