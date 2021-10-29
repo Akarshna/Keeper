@@ -1,2 +1,3 @@
-# Preesh API
-It is a new webapp which fetches data from an api and sends it to google sheet
+# Keeper
+It is just like Google Keep, keeps our to do items stored in Local Storage
+and UI is based on Apple (a litle)
